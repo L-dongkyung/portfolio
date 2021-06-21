@@ -4,12 +4,6 @@
     <meta charset="utf-8">
     <title>portfolio</title>
     <link rel="stylesheet" href="main_css.css">
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $("#contents").load("resume.html");
-      });
-    </script>
   </head>
   <body id="body_grid">
     <div class="header">
@@ -21,7 +15,7 @@
           <li>Home</li>
           <li>개인프로젝트
             <ol>
-              <li><a href="buslog.html">업무자동화</a></li>
+              <li>업무자동화</li>
             </ol>
           </li>
           <li>팀프로젝트
@@ -37,8 +31,25 @@
         </ul>
       </div>
       <div id="contents">
-
-
+        <h1>파이썬 업무자동화</h1>
+        <p><b>개발환경</b> <br>
+        os : windows 10 Pro <br>
+        lang : python 3.9, python 3.6 <br>
+        IDE : pycharm <br>
+        package : PyQt5, openpyxl, pyinstaller <br>
+        <br>
+        <p><b>요구사항</b><br>
+          <ol>
+            <li>배차 운행 기록을 엑셀에 입력합니다.</li>
+            <li>사용자는 50대로 엑셀 다루는 능력이 없습니다.</li>
+            <li>그래픽 UI를 이용하여 데이터를 입력하고 싶습니다.</li>
+            <li>잘못된 정보를 입력할 경우 입력이 최소 되거나 경고로 알립니다.</li>
+          </ol>
+        </p>
+        <p><b>UI 디자인</b><br>
+          <img src="buslogUI.jpg">
+        </p>
+        </p>
       </div>
     </div>
     <div class="footer">
