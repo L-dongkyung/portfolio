@@ -8,7 +8,6 @@ h1{
   margin: 0;
 }
 .footer{
-  position: fixed;
   left: 0px;
   bottom: 0px;
   width: 100%;
@@ -19,7 +18,7 @@ h1{
 }
 #body_grid{
   display: grid;
-  grid-template-rows: 150px 800px 150px;
+  grid-template-rows: 150px 1fr 150px;
 }
 #contents_grid{
   display:grid;
