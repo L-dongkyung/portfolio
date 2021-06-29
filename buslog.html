@@ -32,44 +32,112 @@
       </div>
       <div id="contents">
         <h1>파이썬 업무자동화</h1>
-        <div><b>개발환경</b> <br>
-          os : windows 10 Pro <br>
-          lang : python 3.9, python 3.6 <br>
-          IDE : pycharm<br>
-          package : PyQt5, openpyxl, pyinstaller <br>
-          <br>
-          <div><b>요구사항</b><br>
-            <ol>
-              <li>배차 운행 기록을 엑셀에 입력합니다.</li>
-              <li>사용자의 연령은 50대로 엑셀 다루는 능력이 없습니다.</li>
-              <li>그래픽 UI를 이용하여 데이터를 입력하고 싶습니다.</li>
-              <li>잘못된 정보를 입력할 경우 입력이 최소 되거나 경고로 알립니다.</li>
-            </ol>
-          </div>
-          <div><b>UI 디자인</b><br>
-            <img src="img\buslogUI.jpg" width="400" height="400">
-          </div>
-          <div>
-            <b>프로그램 순서</b><br>
+        <div>코드 :
+          <a href="https://github.com/L-dongkyung/bus_log_Project.git">
+          깃허브 bus_log_Project</a>
+        </div>
+        <div>
+          <p>
+            <b>개발 목적<br></b>
+            버스 기사님들의 차량운행 기록을 위한 프로그램 개발합니다.
+          </p>
+        </div>
+        <div>
+          <p>
+            <b>개발환경</b> <br>
+            os : windows 10 Pro <br>
+            language : python 3.9<br>
+            IDE : pycharm<br>
+            package : PyQt5, openpyxl, pyinstaller
+          </p>
+        </div>
+        <div>
+          <p>
+            <b>요구사항</b><br>
+              <ol>
+                <li>배차 운행 기록을 엑셀에 입력합니다.</li>
+                <li>사용자의 연령은 50대로 엑셀 다루는 능력이 없습니다.</li>
+                <li>그래픽 UI를 이용하여 데이터를 입력하고 싶습니다.</li>
+                <li>잘못된 정보를 입력할 경우 입력이 최소 되거나 경고로 알립니다.</li>
+              </ol>
+          </p>
+        </div>
+        <div>
+          <p>
+            <b>함수별 기능</b>
+            <table>
+              <tr>
+                <th colspan="2" style="font-size:25px">UI class</th>
+              </tr>
+              <tr>
+                <th>exel_class</th>
+                <td>UI 클래스 내부에서 exel 클래스를 생성하여 사용합니다.</td>
+              </tr>
+              <tr>
+                <th rowspan="2">__init__</th>
+                <td>1. UI를 실행하고 QMainWindow Class를 상속 받습니다.</td>
+              </tr>
+              <tr>
+                <td>2. 저장, 취소, 날짜, exel 클래스를 설정합니다.</td>
+              </tr>
+              <tr>
+                <th rowspan="2">saveEvent</th>
+                <td>1. 저장버튼 클릭시 실행할 함수로 입력 데이터를 엑셀에 저장합니다.</td>
+              </tr>
+              <tr>
+                <td>2. 저장 성공, 실패를 알려주고 성공 시 프로그램을 종료합니다.</td>
+              </tr>
+              <tr>
+                <th colspan="2" style="font-size:25px">exel class</th>
+              </tr>
+              <tr>
+                <th>__init__</th>
+                <td>exel 파일을 불러옵니다.(작업중이던 파일이 없을경우 백업파일을 불러옵니다.)</td>
+              </tr>
+              <tr>
+                <th>select_sheet</th>
+                <td>운행구간에 따른 해당 시트를 선택하여 엑셀 시트를 활성화합니다.</td>
+              </tr>
+              <tr>
+                <th>write_xl</th>
+                <td>데이터를 입력받아 운행시간, 주행거리를 계산하여 순서대로 시트에 입력합니다.</td>
+              </tr>
+              <tr>
+                <th>save_xl</th>
+                <td>엑셀을 지정한 이름으로 저장하고 종료합니다.</td>
+              </tr>
+            </table>
+          </p>
+        </div>
+        <div>
+          <p>
+            <b><br>UI 디자인</b><br>
+              <img src="img\buslogUI.jpg" width="400" height="400">
+          </p>
+        </div>
+        <div>
+          <p>
+            <b><br>프로그램 순서</b><br>
             <img src="img/bus.jpg" width="600" >
-          </div>
-          <div>
-            <b>class 다이어그램</b><br>
+          </p>
+        </div>
+        <div>
+          <p>
+            <b><br>class 다이어그램</b><br>
             <img src="img/busclass.jpg" width="400">
-          </div>
-          <div>
-            <b>엑셀 결과물</b><br>
-            <img src="img\exel_ex.jpg" width="700" height="150">
-          </div>
-          <br>
-          <br>
-
+          </p>
+        </div>
+        <div>
+          <p>
+            <b><br>엑셀 결과물</b><br>
+            <img src="img\exel_ex.jpg" width="700" >
+          </p>
         </div>
       </div>
     </div>
     <div class="footer">
       <p>
-        2021.06.18 <br>
+        2021.06.29 <br>
         writer : 이동경
 
       </p>

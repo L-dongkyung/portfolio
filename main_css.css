@@ -37,3 +37,15 @@ h1{
 ol{
   padding-left: 10px;
 }
+table {
+  width: 90%;
+  border-top: 1px solid #444444;
+  border-collapse: collapse;
+}
+th, td {
+  border-bottom: 1px solid #444444;
+  padding: 10px;
+}
+img {
+  border: 1px solid #dadada;
+}
