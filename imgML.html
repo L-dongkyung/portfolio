@@ -114,6 +114,21 @@
       <div id="6">
         <p><br>
           <h2>6. 이미지 OCR-연속된 문자 인식</h2>
+          OCR은 Optical Character Recognition의 약자로 이미지를 인식해서 텍스트로 결과를 보여줍니다.<br>
+          OpenCV를 통해서 숫자 이미지를 인식하고 mnist로 숫자를 학습하겠습니다.<br>
+          먼저 OpenCV로 숫자를 인식시키면 <br>
+          <img src="img/numbers.png" alt=""><img src="img/numberscnt.png" alt=""><br>
+          이렇게 각 숫자를 인식합니다. <br>
+          keras의 기본 숫자 학습 이미지인 mnist로 학습을 합니다.<br>
+          <img src="img/mnist.jpg" alt=""> <br>
+          정답률이 98퍼센트로 올바르게 학습이 이루어졌습니다.
+          이제 다른 이미지로 인식을 해보겠습니다. <br>
+          <img src="img/numbers100.png" alt="" width="400px"><img src="img/ocr.jpg" alt=""><br>
+          mnist는 손글씨이고 이미지에 쓰인 숫자는 폰트가 있어서 6을 5로 0을 9로 인식합니다.<br>
+          폰트로 숫자를 다시 학습 하면 정확히 인식할 것으로 보입니다. <br>
+          하지만 가상환경으로 Ubuntu를 사용하는데 내장 폰트가 없어서 학습이 불가능 합니다. <br>
+          실제 환경에서는 내장 폰트와 함께 인터넷의 여러 폰트를 다운 받을 수 있어 이를 이용하면 <br>
+          정답률을 100%에 가깝게 모델을 만들 수 있습니다.
         </p>
 
       </div>
